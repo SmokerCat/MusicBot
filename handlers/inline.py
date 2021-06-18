@@ -1,5 +1,5 @@
 """
-Written by @kartikrajofficial.
+Written by @Cat_Of_TelegramX.
 """
 from pyrogram import Client, errors
 from pyrogram.types import InlineQuery, InlineQueryResultArticle, InputTextMessageContent
