@@ -1,3 +1,4 @@
+
 from pyrogram import Client, filters
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 
@@ -8,10 +9,11 @@ from helpers.filters import other_filters2
 @Client.on_message(other_filters2)
 async def start(_, message: Message):
     await message.reply_sticker("CAACAgUAAxkBAAImYGDMHTX4zOA9PWMPjokeT_woS2uzAAKqAgACgAxhVrW_bIls07PzHwQ")
+        
     await message.reply_text(
         f"""**Dear {message.from_user.first_name}!
 
-😁 I am Aami Song Bot. 
+🌼 I am Aami Music Player. 🌼
 
 🥳 I can play music in your Telegram Group's Voice Chat😉
 
@@ -19,31 +21,31 @@ async def start(_, message: Message):
 ⚜️You can make your own music bot just tap on deploy link 🔱
 
 
-Developed by ⚡ @Cat_Of_TelegramX ⚡
+Developed by ⚡ @Cat_of_TelegramX ⚡
 
 
 My commands - type  /help to get commands, which work in grp
 
 Thanks for using .
 
-Regrards [Support](https://t.me/Cat_Telegram_Project_Club)
+Regrards [AAMI](https://t.me/Aami_song_bot)
 **
         """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🛠 Repo Here 🛠", url="https://t.me/Cat_Of_TelegramX")
+                        "🍁 REPO 🍁", url="https://t.me/Cat_Telegram_Project_Club")
                   ],[
                     InlineKeyboardButton(
-                        "💬 Support ", url="https://t.me/Cat_Telegram_Project_Club"
+                        "🌼 Group", url="https://t.me/Cat_Telegram_Project_Club"
                     ),
                     InlineKeyboardButton(
-                        "🔊 Channel", url="https://t.me/Cat_Telegram_Projects"
+                        "🌼 Channel", url="https://t.me/Cat_Telegram_Projects"
                     )
                 ],[ 
                     InlineKeyboardButton(
-                        "➕ Add To Your Group ➕", url="https://t.me/Aami_Song_bot?startgroup=true"
+                        "🦋 Add To Your Group 🦋", url="https://t.me/Aami_song_bot?startgroup=true"
                     )]
             ]
         ),
@@ -52,12 +54,12 @@ Regrards [Support](https://t.me/Cat_Telegram_Project_Club)
 
 @Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
-      await message.reply_text("""**I am Always Active😁...!!**""",
+      await message.reply_text("""**⭐Aami MUSIC PLAYER IS ALWAYS ACTIVE!!⭐**""",
       reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🔊 Channel", url="https://t.me/Cat_Telegram_Projects")
+                        "🌼 Channel", url="https://t.me/Cat_Telegram_Projects")
                 ]
             ]
         )
