@@ -7,11 +7,11 @@ from helpers.filters import other_filters2
 
 @Client.on_message(other_filters2)
 async def start(_, message: Message):
-    await message.reply_sticker("CAACAgQAAx0CUJU0dgACAppgyWsRKZJ0W4hbRKdVMYuxwb50wwACgxcAAtqjlSw9sWir1m6CTx8E")
+    await message.reply_sticker("CAACAgUAAxkBAAImYGDMHTX4zOA9PWMPjokeT_woS2uzAAKqAgACgAxhVrW_bIls07PzHwQ")
     await message.reply_text(
         f"""**Dear {message.from_user.first_name}!
 
-😁 I am KINGBOT Music Player. 
+😁 I am Aami Song Bot. 
 
 🥳 I can play music in your Telegram Group's Voice Chat😉
 
@@ -19,31 +19,31 @@ async def start(_, message: Message):
 ⚜️You can make your own music bot just tap on deploy link 🔱
 
 
-Developed by ⚡ @kartikrajofficial_s ⚡
+Developed by ⚡ @Cat_Of_TelegramX ⚡
 
 
 My commands - type  /help to get commands, which work in grp
 
 Thanks for using .
 
-Regrards [KINGBOT](https://t.me/KINGBOTOFFICIAL)
+Regrards [Support](https://t.me/Cat_Telegram_Project_Club)
 **
         """,
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🛠 DEPLOY LINK🛠", url="https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2Fkartikrajofficial%2FMusicBot&template=https%3A%2F%2Fgithub.com%2Fkartikrajofficial%2FMusicBot")
+                        "🛠 Repo Here 🛠", url="https://t.me/Cat_Of_TelegramX")
                   ],[
                     InlineKeyboardButton(
-                        "💬 Group", url="https://t.me/KINGBOTOFFICIALCHAT"
+                        "💬 Support ", url="https://t.me/Cat_Telegram_Project_Club"
                     ),
                     InlineKeyboardButton(
-                        "🔊 Channel", url="https://t.me/KINGBOTOFFICIAL"
+                        "🔊 Channel", url="https://t.me/Cat_Telegram_Projects"
                     )
                 ],[ 
                     InlineKeyboardButton(
-                        "➕ Add To Your Group ➕", url="https://t.me/Kingbot_Music_Bot?startgroup=true"
+                        "➕ Add To Your Group ➕", url="https://t.me/Aami_Song_bot?startgroup=true"
                     )]
             ]
         ),
@@ -52,12 +52,12 @@ Regrards [KINGBOT](https://t.me/KINGBOTOFFICIAL)
 
 @Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
-      await message.reply_text("""**⭐KINGBOT MUSIC PLAYER IS ALWAYS ACTIVE!!⭐**""",
+      await message.reply_text("""**I am Always Active😁...!!**""",
       reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
-                        "🔊 Channel", url="https://t.me/KINGBOTOFFICIAL")
+                        "🔊 Channel", url="https://t.me/Cat_Telegram_Projects")
                 ]
             ]
         )
